@@ -1,0 +1,174 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+  Plans
+{% endblock %}
+
+{% block content %}
+  <section class="nps">
+    <div class="project container-fluid">
+      <div class="search bg-warning">
+        <div class="text-center">
+          <span class="heading">Search Projects</span>
+        </div>
+        <div class="main-search text-center">
+          <div class="main-row d-flex justify-content-center">
+            <div class="search-ms">
+              <input type="text" placeholder="Window, roof, etc" />
+            </div>
+            <div class="button">
+              <button type="submit"><i class="fa fa-search"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-3" id="sticky-sidebar">
+            {% comment %} <div class="lcs">
+              <H6 class="bg-warning srb">Show Results by</H6>
+            </div>
+            <div class="sfb"></div> {% endcomment %}
+            <div class="card">
+              <article class="card-group-item">
+                <header class="card-header">
+                  <h6 class="title">Date Range</h6>
+                </header>
+                <div class="filter-content">
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="form-group col-md-6">
+                        <label>Min</label>
+                        <input type="date" class="form-control" id="inputEmail4" />
+                      </div>
+                      <div class="form-group col-md-6 text-right">
+                        <label>Max</label>
+                        <input type="date" class="form-control" />
+                      </div>
+                    </div>
+                  </div> <!-- card-body.// -->
+                </div>
+              </article> <!-- card-group-item.// -->
+              <article class="card-group-item">
+                <header class="card-header">
+                  <h6 class="title">Bid Amount</h6>
+                </header>
+                <div class="filter-content">
+                  <div class="card-body">
+                    <div class="row">
+                      <div class="form-group col-md-6">
+                        <label>Min</label>
+                        <input type="number" class="form-control" id="inputEmail4" placeholder="$0" />
+                      </div>
+                      <div class="form-group col-md-6 text-right">
+                        <label>Max</label>
+                        <input type="number" class="form-control" placeholder="$1,0000" />
+                      </div>
+                    </div>
+                  </div> <!-- card-body.// -->
+                </div>
+              </article> <!-- card-group-item.// -->
+              <article class="card-group-item">
+                <header class="card-header">
+                  <h6 class="title">Similar category</h6>
+                </header>
+                <div class="filter-content">
+                  <div class="list-group list-group-flush">
+                    <a href="#" class="list-group-item">Biding <span class="float-right badge badge-light round sbn">142</span></a>
+                    <a href="#" class="list-group-item">Take-Off in prpgress <span class="float-right sbn badge badge-light round">3</span></a>
+                    <a href="#" class="list-group-item">Take-Off completed <span class="float-right badge badge-light round sbn">32</span></a>
+                    <a href="#" class="list-group-item">Another item <span class="float-right badge badge-light round sbn">12</span></a>
+                  </div> <!-- list-group .// -->
+                </div>
+              </article> <!-- card-group-item.// -->
+              <article class="card-group-item">
+                <header class="card-header">
+                  <h6 class="title">Status</h6>
+                </header>
+                <div class="filter-content">
+                  <div class="card-body">
+                    <label class="form-check">
+                      <input class="form-check-input" type="radio" name="exampleRadio" value="" />
+                      <span class="form-check-label">Soliciated</span>
+                    </label>
+                    <label class="form-check">
+                      <input class="form-check-input" type="radio" name="exampleRadio" value="" />
+                      <span class="form-check-label">UnSoliciated</span>
+                    </label>
+                    <label class="form-check">
+                      <input class="form-check-input" type="radio" name="exampleRadio" value="" />
+                      <span class="form-check-label">None</span>
+                    </label>
+                  </div> <!-- card-body.// -->
+                </div>
+              </article> <!-- card-group-item.// -->
+            </div>
+          </div>
+          <div class="col-9">
+            <div>
+              <select class="form-select" aria-label="Default select example">
+                <option value="3">Updated Date: Recent First</option>
+                <option selected>Updated Date: Oldest First</option>
+                <option value="1">Price: Low to High</option>
+                <option value="2">Price: High to Low</option>
+              </select>
+            </div>
+            <div class="srch">
+              <div class="row">
+                <div class="col-9 pna">
+                  <div class="ph">
+                    <h4>OGS - Provide Recreational Multi-Use Rail Trail, Saranac Lake to Floodwood - 47476</h4>
+                  </div>
+                  <div class="pa">
+                    <span class=""><i class="fa-solid fa-location-dot location-icon"></i>NYSDEC, Adirondack Rail Trail Tupper Lake to Lake Placid Lake Placid, NY 12946</span>
+                    <span></span>
+                  </div>
+                </div>
+                <div class="col-3">
+                  <div class="pd">
+                    <p>
+                      <span class="amt">Bid Amount:</span> $ 500,000,000
+                    </p>
+                    <p>
+                      <span class="pbt">Bid Date:</span> Mar 15, 2023
+                    </p>
+                  </div>
+                  <div class="pb">
+                    <button class="btn btn-warning">More Details</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="srch">
+              <div class="row">
+                <div class="col-9 pna">
+                  <div class="ph">
+                    <h4>OGS - Provide Recreational Multi-Use Rail Trail, Saranac Lake to Floodwood - 47476</h4>
+                  </div>
+                  <div class="pa">
+                    <span class=""><i class="fa-solid fa-location-dot location-icon"></i>NYSDEC, Adirondack Rail Trail Tupper Lake to Lake Placid Lake Placid, NY 12946</span>
+                    <span></span>
+                  </div>
+                </div>
+                <div class="col-3">
+                  <div class="pd">
+                    <p>
+                      <span class="amt">Bid Amount:</span> $ 500,000,000
+                    </p>
+                    <p>
+                      <span class="pbt">Bid Date:</span> Mar 15, 2023
+                    </p>
+                  </div>
+                  <div class="pb">
+                    <button class="btn btn-warning">More Details</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+{% endblock %}
